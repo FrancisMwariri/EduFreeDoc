@@ -1,0 +1,10 @@
+# Enable the Rewrite Engine
+RewriteEngine On
+
+# Allow direct access to existing files and directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Redirect all other requests to the index.php file with the query string parameter
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]

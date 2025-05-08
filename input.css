@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+
+#herosection {
+    background-image: url('storage/images/homepage.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100vh;
+}
+#aboutsection {
+    background-image: url('storage/images/aboutBackground.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:70vh;
+}
+#color{
+    background-color: brown;
+}
+
+a{
+    text-decoration: none;
+    text-underline-offset: none;
+}
